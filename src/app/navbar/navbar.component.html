@@ -1,0 +1,93 @@
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="../../assets/image/logo-removebg-preview.png" alt="logo1">
+    <a class="navbar-brand" routerLink="home">john bikes</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="home">Home </a>
+            </li>
+            <li class="nav-item">
+
+                <a class="nav-link" routerLink="about">About</a>
+            </li>
+            <li class="nav-item">
+
+                <a class="nav-link" routerLink="serivce">Serivce</a>
+            </li>
+            <li class="nav-item">
+
+                <a class="nav-link" routerLink="product">Product</a>
+            </li>
+        </ul>
+
+        <!-- Button trigger modal -->
+
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
+            ENQUIRY
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">enqiuryform</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form #register="ngForm" (submit)="GetFormData(register.value)">
+                                <div class="form-group">
+                                    <label for="form-label">USERNAME</label>
+                                    <input required minlength="5" type="text" class="form-control"
+                                        id="exampleInputUser1" name="name" #name="ngModel" autocomplete="off" ngModel>
+                                    <span *ngIf="name.invalid && name.touched" class="errormessage">enter the
+                                        username</span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Email</label>
+                                    <input required type="text" class="form-control" name="email" #email="ngModel"
+                                        autocomplete="off" ngModel>
+                                    <span *ngIf="email.invalid && email.touched" class="errormessage">Enter Valid
+                                        data</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-label">PHONE NUMBER</label>
+                                    <input required="10" type="number" class="form-control" id="exampleInputPhone1"
+                                        name="phone" #phone="ngModel" autocomplete="off" ngModel>
+                                    <span *ngIf="phone.invalid && phone.touched" class="errormessage">Enter the phone
+                                        number
+                                    </span>
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-label">address </label>
+                                    <textarea required="" name="address" id="adress" cols="45" rows="15" class="form-control" id="exmapleInputText1"
+                                        placeholder="type your address" #text="ngModel" autocomplete="off"
+                                        ngModel></textarea>
+                                    <span *ngIf="text.invalid && text.touched" class="errormessage">enter the
+                                        valid</span>
+
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button [disabled]="register.invalid" class="btn btn-success btn-block"
+                            type="submit" (click)="onclick()">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<router-outlet></router-outlet>

@@ -1,0 +1,46 @@
+.d-block {
+    margin-left: 30px;
+}
+
+h5 {
+    color: orange;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase ;
+}
+
+label {
+    margin-top: 20px;
+
+}
+
+.form {
+    margin-top: 20px;
+    margin-left: 200px;
+
+}
+
+#exampleInputUser1 {
+    text-transform: uppercase;
+    width: 364px;
+    margin-top: 15px;
+}
+
+.errormessage {
+    color: red;
+}
+
+.btn-primary{
+    margin-left: 166px;
+    margin-top: 25px;
+    
+}
+.form{
+    color: orange;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+   margin-left: 150px;
+}
+.pt-4{
+    padding-bottom: 150px;
+}

@@ -1,0 +1,35 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: red;
+    font-weight: 400
+}
+
+.container {
+    margin-top: 55px;
+
+}
+
+.card-header {
+    text-align: center;
+    text-transform: capitalize;
+    background-color: orange;
+
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+.list-unstyled {
+    font-size: 1.5rem;
+    text-align: left;
+    line-height:50px;
+    text-transform: capitalize;
+}

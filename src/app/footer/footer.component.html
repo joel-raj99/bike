@@ -1,0 +1,28 @@
+<footer class="pt-4 my-sm-5 pt-sm-5 border-top bg-dark">
+  <div class="row">
+    <div class="col-12 col-sm">
+      <small class="d-block sm-3 text-muted">&copy; 2023-2024</small>
+    </div>
+    <div class="col-6 col-sm">
+      <h5>location</h5>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4013080.1601354587!2d78.28939452419674!3d10.809504700218463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a556f9a40e1a253%3A0x339e09a882d84ed4!2sJohn%20Bike%20Care!5e0!3m2!1sen!2sin!4v1692800982888!5m2!1sen!2sin"
+        width="400" height="300" style="border:0;" allowfullscreen loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="col-6 col-sm">
+      <h5>subcribe</h5>
+      <form #register="ngForm">
+        <div class="form-group">
+          <label for="form-label" class="form">signup!</label>
+          <input required minlength="5" type="text" class="form-control" id="exampleInputUser1" name="name"
+            #name="ngModel" placeholder="email address" autocomplete="off" ngModel>
+          <span *ngIf="name.invalid && name.touched" class="errormessage">enter the username</span>
+          <button class="btn btn-primary" type="submit">sign up!</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,75 @@
+/*navbar*/
+img {
+    height: 100px;
+    margin-left: 50px;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-left: 20px;
+
+}
+
+.nav-link {
+    font-size: 35px;
+    margin-left: 145px;
+}
+.nav-link:hover{
+    text-decoration: underline solid orange 10px;
+  
+}
+
+
+.dropdown-item {
+    font-size: 35px;
+
+}
+
+.btn-lg {
+    margin-right: 40px;
+    height: 50px;
+    width: 120px;
+}
+/*modal*/
+.modal-title {
+    padding-left: 120px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.modal {
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.modal-body {
+    padding-left: 40px;
+
+}
+
+.form-control {
+    width: 400px;
+    height: 60px;
+}
+
+label {
+    margin-left: 120px;
+}
+
+#exampleInputdelivery1 {
+    text-transform: uppercase;
+}
+.close{
+    font-size: 50px;
+    margin-right: 10px;
+}
+.errormessage{
+    text-transform: capitalize;
+    color: red;
+}
+.btn{
+    margin-left: 50px;
+    margin-right: 50px;
+}
